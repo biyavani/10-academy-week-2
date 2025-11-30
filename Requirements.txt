@@ -2,3 +2,6 @@ google-play-scraper
 pandas
 numpy
 python-dotenv
+gensim
+spacy
+import en_core_web_sm
