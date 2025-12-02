@@ -32,3 +32,7 @@ SELECT b.bank_name, AVG(r.rating) AS avg_rating
 FROM banks b
 LEFT JOIN reviews r ON b.bank_id = r.bank_id
 GROUP BY b.bank_name;
+SELECT b.bank_name, COUNT(r.review_id) AS review_count
+FROM banks b
+LEFT JOIN reviews r ON b.bank_id = r.bank_id
+GROUP BY b.bank_name;
