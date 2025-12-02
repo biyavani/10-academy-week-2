@@ -24,3 +24,19 @@
    - Scripts (`scraper.py` and `preprocessing.py`) are modular and reusable.  
    - `requirements.txt` included to ensure **all dependencies are tracked**.  
    - Project structured with **`src/` for scripts** and **`data/` for outputs**.  
+## Database Schema
+
+**Banks Table**
+- bank_id (PRIMARY KEY)
+- bank_name
+- app_name
+
+**Reviews Table**
+- review_id (PRIMARY KEY)
+- bank_id (FOREIGN KEY)
+- review_text
+- rating
+- review_date
+- sentiment_label
+- sentiment_score
+- source
